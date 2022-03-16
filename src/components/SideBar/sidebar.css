@@ -1,0 +1,47 @@
+.sidebar {
+  width: 20vw;
+  background-color: #2cbb99;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  align-items: center;
+  color: #fff;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.box1 h2 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+.box2 {
+  padding-top: 30px;
+}
+.box2 a {
+  font-size: 20px;
+}
+.btn2 {
+  background-color: #ddd;
+}
+
+
+@media screen and (max-width : 800px){
+  .sidebar{
+    display : none;
+  }
+
+
+  .sidebar .boxes{
+    width: 70%;
+  }
+}

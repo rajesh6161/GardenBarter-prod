@@ -1,0 +1,29 @@
+input[type=file] {
+    display: none;
+}
+
+.upload-btn label{
+    font-size: 15px;
+    background-color:#2CBB99;
+    padding: 5px 5px;
+    border-radius: 15px;
+}
+
+.upload-btn img{
+    margin-top: -2px;
+    margin-left: 5px;
+    width: 21px;
+    height: 21px;
+}
+
+#errorMsg{
+    color: red;
+    font-size: 15px ;
+}
+
+@media screen and (max-width : 800px){
+
+.modal-backdrop.show{
+    display: none !important;
+}
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling of Left side */ 
+
+
+.wrapper{
+    display: flex;
+    min-height: 90vh;
+    overflow : hidden
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.left{
+    display: flex;
+    flex : 1 1 10rem;
+    flex-direction: column;
+    /* width: 50%; */
+    justify-content: center;
+    align-items: center;
+    padding : 10px 0;
+    text-align: center;
+    z-index: 999;
+    /* background-color: black; */
+}
+
+.left-up{
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -10%;
+}
+
+.left img{
+    width: 60%;
+    margin: auto;
+    padding: 5px 0;
+}
+
+
+.left h4{
+    font-size: 2rem;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    padding: rem 0;
+    margin-top: 4px;
+  
+}
+
+
+.left-down{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    /* margin-top: -2%; */
+}
+
+.left-down p{
+    font-weight: bold;
+}
+
+/* Styling of left side ends */
+
+/* Style right side of the page */
+
+.right{
+    display: flex;
+    /* width: 50%; */
+    flex : 1 1 10rem;
+    z-index: 999;
+}
+
+.form-div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content:center;
+    padding: 5% 5%; 
+}
+
+.signup{
+    margin-left:40%;
+    margin-bottom: 25px;
+}
+
+.form-outermost{
+    margin: 0 10%;
+    width: 80%;
+}
+
+.form-outermost a{
+    color: #083b2f;
+    float: right;
+    margin-top: 4px;
+    padding: 0 10px;
+}
+
+.form-control{
+    /* background-color: #63eccc; */
+    border-radius: 10px;
+}
+
+.form-label{
+    font-size: 1.2rem;
+    font-family:'Times New Roman', Times, serif;
+}   
+
+.form-control::placeholder{
+    font-size: small;
+    color: black;   
+}
+
+.btn-submit{
+    border: 0;
+    background-color: #2CBB99;
+    padding: 0.4rem 3rem;
+    border-radius: 10px;
+}
+
+.btn{
+    background-color: #2CBB99;
+    border: none;
+}
+
+.btns-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.btns-login button:hover{
+    background: none;
+    border: 2px solid #63eccc;
+    color: #133a31;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-div{
+    /* border: 2px solid black; */
+    margin: auto;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px rgba(30, 93, 175, 0.3), 0 0px 20px rgba(30, 93, 175, 0.2);
+}
+
+.bushes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top : -12%;
+    z-index: -1;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width : 790px)
+{
+    .wrapper{
+        flex-direction: column;
+        padding  : 2rem;
+    }        
+    .form-div{
+        height : 100%;
+    }
+}
+
+/* Styling of right side ends */

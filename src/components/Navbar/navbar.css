@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:#2CBB99;
+    font-size: 2rem;
+}
+
+.navbar{
+    height: 10vh;
+    min-height: 10vh;
+    padding: 0 1.5rem !important;
+}
+
+.contact-btn{
+    font-size: 1.3rem !important;
+}

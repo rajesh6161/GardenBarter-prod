@@ -1,0 +1,157 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    margin: 0;
+    padding: 0 2rem;
+    position: absolute;
+    width: 100%;
+}
+
+.page-footer{
+    background-color: #bbffef;
+}
+
+.footer-wrapper{
+    display: flex;
+}
+
+/* Styling left part*/
+
+.footer-left{
+    flex : 1 1 6rem;
+}
+
+
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right:2rem;
+}
+.contact-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.contact-form input{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2px 2px;
+}
+
+.footer-contact h2{ 
+    padding : 1rem 0;
+}
+
+.contact-form textarea{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 1.2rem;
+    padding: 2px 2px;
+    resize: none;
+}
+
+.contact-form button{
+    width: 100%;
+    margin-top: 1.2rem;
+    border-radius: 10px;
+    padding: 0.3rem 2rem 0.3rem;
+
+}
+
+/* Styling of left part ends here */
+
+/* Styling right part*/
+
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.social-media img{
+    width: 40px;
+    height: 40px;
+    padding: 0.4rem;
+    margin-bottom: 10px;
+}
+
+.footer-right h2{
+    padding: 0.8rem 0;
+}
+
+.footer-right a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+
+/* Styling of right part ends here */
+
+.footer-copyright{
+    text-align: center;
+    width: 100%;
+    background-color: #bbffef;
+    
+}
+.footer-copyright p{
+    margin-top:1rem;
+    font-weight: bold;
+    color: #2cbb99;
+}
+.columns{
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+}
+.columns div a:hover{
+    font-weight: bold;
+    color:#2cbb99;
+}
+.column-2, .column-1{
+    padding: 0 1rem;
+}
+.qbtn{
+    padding-left: 2rem;
+}
+.contact-detail{
+    display: flex;
+}
+@media screen and (max-width : 750px) {
+    .footer-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items : center;
+    }
+
+    .footer{
+        padding: 0;
+    }
+
+    .footer-contact{
+        width: 100%;
+    }
+    .footer-right{
+        width:100%;
+        padding-right:0rem;
+        flex-direction: column;
+    }
+    .qbtn{
+        width: 45%;
+        margin: 0 auto;
+    }
+    .contact-detail{
+        flex-direction: column;
+    }
+    .footer-contact h2{
+        text-align: center;
+    }
+}

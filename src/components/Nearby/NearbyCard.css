@@ -1,0 +1,27 @@
+.btn{
+    margin-top: 1rem;
+}
+input{
+    width: 100%;
+}
+.dropdown-toggle{
+    background-color:#2CBB99;
+    width: 100%;
+}
+
+.dropdown select option{
+    background-color:#2CBB99;
+    border: none;
+}
+
+.dropdown select option:focus{
+    background-color:#2CBB99;
+}
+
+.card{
+    padding: 0.8rem 1.4rem;
+}
+
+.card img{
+    height: 170px;
+}

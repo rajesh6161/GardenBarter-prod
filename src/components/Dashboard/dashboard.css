@@ -1,0 +1,106 @@
+.dashboardWrapper {
+  display: flex;
+}
+.dashboard {
+  overflow: hidden !important;
+  height: 100vh;
+}
+.d_top {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+.d_top .icons {
+  position: absolute;
+  right: 10px;
+}
+
+.fa-bars{
+  display : none;
+}
+.d_top h2 {
+  text-align: center;
+}
+
+.d_content {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  width: 80vw;
+  height: 100%;
+  padding: 20px;
+  padding-bottom: 80px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+#productCard {
+  width: 280px;
+  height: 380px;
+  margin: 20px;
+  border-radius: 10px !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#productCard .card-body p {
+  padding: 0;
+  margin: 0;
+}
+.productImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px !important;
+}
+
+.flexC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-red {
+  background-color: red;
+}
+
+#checkbox{
+  display: none;
+}
+
+
+@media screen and (max-width : 800px){
+  .d_content{
+    width: 100%;
+  }
+  .d_top{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .d_top .icons {
+    position: relative;
+  }
+  .fa-bars{
+    display : block;
+    z-index: 1000;
+  }
+
+  .sidebar{
+    display : block;
+    position: absolute;
+    width: 60%;
+    z-index: 1;
+    left: -60%;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+  }
+
+  .sidebar .box2{
+    width: 80%;
+    margin-left: 10%;
+  }
+}
